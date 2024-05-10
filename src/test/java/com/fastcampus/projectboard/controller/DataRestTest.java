@@ -1,5 +1,6 @@
 package com.fastcampus.projectboard.controller;
 
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,6 +16,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 
 //해당 테스트는 상단히 무거운 테스트
 //@WebMvcTest //슬라이스 테스트? 컨트롤러 외에 빈들을 로드하지 않는다. 최소한으로만 읽어들인다.
+@Disabled("Spring DATA Rest 통합테스트는 불필요하므로 제외시킴 ")
 @DisplayName("Data Rest 테스트")
 @Transactional // 테스트에서 동작하는 트랙잭서녈의 기본 동작은 Rollback
 @AutoConfigureMockMvc
